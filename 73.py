@@ -1,12 +1,16 @@
+import os
 agenda = {}
 
 while True:
+    os.system("clear")
     print("1. Añadir y modificar")
     print("2. Buscar")
     print("3. Borrar")
     print("4. Listar")
     print("5. Salir")
     opcion = input("Elige una opcion: ")
+
+
     if opcion == "1":
         nombre = input("introduce un nombre: ")
         if nombre in agenda:
@@ -49,3 +53,5 @@ while True:
     if opcion == "5":
         print ("guardando y saliendo...")
         break
+
+    input ("pulsa lo que sea para continuar:")
